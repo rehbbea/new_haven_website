@@ -1,0 +1,1 @@
+<p class="edgt-pl-not-found"><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'edge-core' ); ?></p>

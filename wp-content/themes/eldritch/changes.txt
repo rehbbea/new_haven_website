@@ -1,0 +1,98 @@
+1.7
+- Added WordPress 6.0.3 compatibility
+- Added WooCommerce 7.0.0 compatibility
+- Added PHP 8 compatibility
+- Added Enable/Disable Google Fonts option and functionality
+- Updated Edge Core plugin to 1.1.1
+- Updated Edge Instagram Feed plugin to 2.0.1
+- Updated Edge Twitter Feed plugin to 1.0.2
+- Updated WPBakery Page Builder plugin to 6.10.0
+- Updated Revolution Slider plugin to 6.6.5
+- Updated Eldritch Child theme to 1.0.2
+- Updated Instagram security keys
+- Updated demo import files
+- Fixed child theme CSS priority
+- Fixed fullscreen menu scrolling
+- Fixed wrong escaping on video blog single type
+- Fixed social share
+- Fixed Simple Line icons version
+- Fixed countdown calculation
+- Fixed countdown year span
+- Fixed Revolution Slider preview functionality
+- Fixed star rating in single product page
+- Fixed WooCommerce quantity input fields NaN value
+- Fixed cart widgets in WordPress 5.8
+- Fixed creation of the Custom Sidebars in new Widgets layout
+- Fixed 'Bulk Select' functionality with Menus
+- Fixed potential security issue
+- Fixed demo sliders import
+- Improved import for PHP8
+- Improved Gutenberg meta boxes style
+- Improved eldritch_edge_get_attachment_id_from_url function
+- Improved match item header area display
+- Improved product search widget display
+- Improved shop page select2 dropdown display
+- Removed eldritch_edge_addslashes function
+- Removed Instagram business login
+- Removed Google Plus social login
+- Removed label in menu editor menu items
+
+1.6.1
+- Updated WPBakery Page Builder to 6.4.1
+- Updated Revolution Slider plugin to 6.2.23
+- Updated Edge Instagram Feed to 2.0
+- Updated Edge Twitter Feed to 1.0.1
+- Removed unused file instagram-redirect.php from Edge Instagram Feed plugin
+- Removed unused file twitter-redirect.php from Edge Twitter Feed plugin
+
+1.6
+- Added WordPress 5.5 compatibility
+- Added WooCommerce 4.5.2 compatibility
+- Updated WPBakery page builder to 6.4.0
+- Updated Revolution Slider plugin to 6.2.22
+- Fixed portfolio load more
+- Fixed autoplay video on 'video background sections'
+
+1.5
+- Added WooCommerce 3.6.5 compatibility
+- Added lightbox functionality to woocommerce gallery images
+- Updated WPBakery Page Builder to 6.0.4
+- Updated Revolution Slider to 6.0.4
+
+1.4
+- Updated WPBakery Page Builder to 6.0.2
+- Updated Edge Core Plugin to 1.1
+- Updated Child theme to 1.0.1
+- Improved import functionality
+- Improved theme security
+
+1.3.1
+- Minor improvements and fixes
+
+1.3
+- Added WooCommerce 3.6.2 compatibility
+- Updated WPBakery Page Builder to 5.7
+- Updated Revolution Slider to 5.4.8.3
+- Updated Edge Core to 1.0.2
+- Improved framework files
+
+1.2
+- Added WooCommerce 3.4.4 compatibility
+- Added compatibility with Gutenberg plugin
+- Updated Visual Composer to 5.5.2
+- Updated Revolution Slider to 5.4.8.
+
+1.1
+- Added WooCommerce 3.3.3 compatibility
+- Added Envato Market plugin as required
+- Added recommended plugins (WooCommerce and Contact Form 7)
+- Updated Visual Composer to 5.4.5
+- Updated Revolution Slider to 5.4.7.1
+- Updated Core to 1.0.1
+- Improved menu import functionality
+- Fixed potential security issue when saving theme options
+- Fixed not clickable checkout fields
+- Fixed https problem with portfolio video
+- Fixed deprecated create_function
+- Fixed Horizontally Scrolling Portfolio Image Size
+- Fixed Horizontally Scrolling Portfolio Script
