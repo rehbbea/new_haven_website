@@ -41,6 +41,158 @@ a:hover {
     background-color: #1d1d1d;
 }
 
+/* Remove forum background images */
+.edgt-boxed .edgt-wrapper {
+    background-image: none !important;
+    background-color: #1d1d1d !important;
+}
+
+/* Remove bbpress background images */
+.bbpress .edgt-content .edgt-content-inner > .edgt-container,
+.bbpress .edgt-content .edgt-content-inner > .edgt-full-width,
+.bbpress .edgt-content {
+    background-image: none !important;
+    background-color: #1d1d1d !important;
+}
+
+.bbpress .edgt-page-header .edgt-logo-area,
+.bbpress .edgt-page-header .edgt-menu-area {
+    background-image: none !important;
+    background-color: #1d1d1d !important;
+}
+
+/* Fix forum text colors */
+#bbpress-forums .forum-titles {
+    color: #ffffff !important;
+}
+
+#bbpress-forums li.bbp-body ul.forum, 
+#bbpress-forums li.bbp-body ul.topic {
+    color: #ffffff !important;
+    border-bottom: 1px solid #3d3d3d !important;
+}
+
+#bbpress-forums li.bbp-header, 
+#bbpress-forums li.bbp-footer {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+}
+
+#bbpress-forums div.bbp-forum-title h3, 
+#bbpress-forums div.bbp-topic-title h3, 
+#bbpress-forums div.bbp-reply-title h3 {
+    color: #ffffff !important;
+}
+
+#bbpress-forums .bbp-forums-list li a {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+#bbpress-forums a,
+.bbp-topic-title a,
+.bbp-forum-title a {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+#bbpress-forums a:hover,
+.bbp-topic-title a:hover,
+.bbp-forum-title a:hover {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);
+}
+
+.bbp-topics-front ul.super-sticky,
+.bbp-topics ul.super-sticky,
+.bbp-topics ul.sticky,
+.bbp-forum-content ul.sticky {
+    background-color: rgba(45, 45, 45, 0.9) !important;
+}
+
+/* More forum text fixes */
+.bbp-meta,
+.bbp-pagination,
+.bbp-template-notice,
+.bbp-reply-content,
+.bbp-topic-content,
+.bbp-forum-content,
+div.bbp-breadcrumb, 
+div.bbp-topic-tags,
+.bbp-author-name,
+.bbp-meta a {
+    color: #ffffff !important;
+}
+
+.bbp-pagination-count {
+    color: #cccccc !important;
+}
+
+/* Fix form elements in forums */
+#bbpress-forums fieldset.bbp-form,
+div.bbp-breadcrumb, 
+div.bbp-topic-tags {
+    border-color: #3d3d3d !important;
+}
+
+#bbpress-forums fieldset.bbp-form legend {
+    color: #ffffff !important;
+}
+
+#bbpress-forums fieldset.bbp-form label {
+    color: #ffffff !important;
+}
+
+/* Fix bbPress search */
+#bbp_search,
+#bbp-search-form #bbp_search_submit {
+    background-color: #2d2d2d !important;
+    color: #ffffff !important;
+    border: 1px solid #3d3d3d !important;
+}
+
+/* Additional text color fixes */
+#bbpress-forums div.bbp-breadcrumb .bbp-breadcrumb-current {
+    text-decoration: line-through;
+    color: #ffffff !important;
+}
+
+/* Fix any other possible text color issues */
+#bbpress-forums *,
+.bbp-forums *,
+.bbp-topics *,
+.bbp-replies *,
+.bbp-search-results *,
+#bbpress-forums div.bbp-forum-content,
+#bbpress-forums div.bbp-topic-content,
+#bbpress-forums div.bbp-reply-content,
+.bbp-forum-freshness,
+.bbp-topic-freshness {
+    color: #ffffff !important;
+}
+
+/* Fix any spans or other elements that might have inline styles */
+#bbpress-forums span,
+#bbpress-forums small,
+#bbpress-forums p {
+    color: #ffffff !important;
+}
+
+/* Maintain link styling */
+#bbpress-forums span a,
+#bbpress-forums small a,
+#bbpress-forums p a {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+#bbpress-forums span a:hover,
+#bbpress-forums small a:hover,
+#bbpress-forums p a:hover {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);
+}
+
 .edgt-content {
     background-color: #1d1d1d;
 }
