@@ -1,0 +1,277 @@
+/* 
+ * Dark Theme Customizations for Eldritch Theme
+ * Created: March 23, 2025
+ */
+
+/* Import Google Font - Lato */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* Basic Elements */
+body {
+    background-color: #1d1d1d;
+    color: #ffffff;
+    font-family: 'Lato','Open Sans', sans-serif !important;
+    font-size: 150% !important;
+    font-weight: 350;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+}
+
+p {
+    color: #ffffff !important;
+}
+
+/* Links */
+a {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);
+}
+
+/* Main Structure Elements */
+.edgt-wrapper {
+    background-color: #1d1d1d;
+}
+
+.edgt-content {
+    background-color: #1d1d1d;
+}
+
+.edgt-container {
+    background-color: #1d1d1d;
+}
+
+.edgt-content .edgt-content-inner > .edgt-container,
+.edgt-content .edgt-content-inner > .edgt-full-width {
+    background-color: #1d1d1d;
+}
+
+/* Header */
+.edgt-page-header {
+    background-color: #1d1d1d;
+}
+
+.edgt-menu-area {
+    background-color: #1d1d1d !important;
+}
+
+.edgt-main-menu > ul > li > a {
+    color: #ffffff !important;
+    font-size: 100% !important;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.edgt-main-menu > ul > li > a:hover {
+    color: #e6e6e6 !important;
+    font-size: 100% !important;
+}
+
+/* Mobile Header */
+.edgt-mobile-header .edgt-mobile-header-inner {
+    background-color: #1d1d1d;
+}
+
+.edgt-mobile-header .edgt-mobile-menu-opener a {
+    color: #ffffff;
+}
+
+/* Dropdown Menu */
+.edgt-drop-down .second {
+    background-color: #1d1d1d;
+}
+
+.edgt-drop-down .second .inner ul li a {
+    color: #ffffff !important;
+}
+
+.edgt-drop-down .second .inner ul li a:hover {
+    color: #e6e6e6 !important;
+}
+
+.edgt-full-width-wide-menu .edgt-drop-down .wide .second, 
+.edgt-drop-down .second .inner > ul, 
+.edgt-drop-down .second .inner ul li ul, 
+.edgt-drop-down li.narrow .second .inner ul, 
+.shopping_cart_dropdown, 
+.edgt-page-header #lang_sel ul ul, 
+.edgt-top-bar #lang_sel ul ul, 
+.edgt-drop-down .wide.wide_background .second {
+    background-color: rgba(29, 29, 29, 0.9);
+}
+
+/* Title Area */
+.edgt-title {
+    background-color: #1d1d1d;
+}
+
+.edgt-title .edgt-title-holder h1 {
+    color: #ffffff;
+}
+
+.edgt-title .edgt-title-holder .edgt-subtitle {
+    color: #ffffff;
+}
+
+.edgt-title.edgt-standard-type .edgt-title-holder h1 {
+    color: #ffffff;
+}
+
+/* Blog */
+.edgt-blog-holder article {
+    background-color: #1d1d1d;
+}
+
+.edgt-blog-holder article .edgt-post-text {
+    background-color: #1d1d1d;
+}
+
+.edgt-blog-holder article .edgt-post-info,
+.edgt-blog-holder article .edgt-post-info a {
+    color: #ffffff;
+}
+
+.edgt-blog-holder article .edgt-post-title a {
+    color: #ffffff;
+}
+
+.edgt-blog-holder.edgt-blog-type-masonry article .edgt-post-text {
+    background-color: #1d1d1d;
+}
+
+.edgt-post-text-inner p {
+    color: #ffffff !important;
+}
+
+/* Sidebar */
+
+.edgt-sidebar .widget {
+    background-color: transparent !important;
+}
+
+.edgt-sidebar .widget a {
+    color: #ffffff;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+/* Widgets */
+.widget {
+    color: #ffffff;
+    background-color: transparent !important;
+}
+
+.widget a {
+    color: #ffffff;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+.widget a:hover {
+    color: #00ffff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);
+}
+
+.widget .edgt-widget-title {
+    color: #ffffff;
+}
+
+/* Comments */
+.edgt-comment-holder .edgt-comment-text {
+    color: #ffffff;
+}
+
+/* Forms */
+input[type="text"], 
+input[type="email"],
+input[type="password"],
+input[type="number"],
+textarea {
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: 1px solid #3d3d3d;
+}
+
+input[type="submit"] {
+    background-color: #3d3d3d;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    background-color: #4d4d4d;
+}
+
+/* Buttons */
+.edgt-btn {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+.edgt-btn:hover {
+    background-color: #2d2d2d;
+}
+
+/* Portfolio */
+.edgt-portfolio-list-holder article .edgt-item-text-holder {
+    background-color: #1d1d1d;
+}
+
+.edgt-portfolio-list-holder article .edgt-item-text-holder h3 {
+    color: #ffffff;
+}
+
+/* Team */
+.edgt-team .edgt-team-info {
+    background-color: #1d1d1d;
+}
+
+.edgt-team .edgt-team-name {
+    color: #ffffff;
+}
+
+/* Icons */
+.edgt-icon-shortcode a {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7);
+}
+
+.edgt-icon-shortcode a:hover {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9);
+}
+
+/* Side Menu */
+
+
+/* Other UI Elements */
+.edgt-separator {
+    background-color: #3d3d3d;
+}
+
+.edgt-tabs .edgt-tabs-nav li a {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+.edgt-tabs .edgt-tabs-nav li.ui-state-active a {
+    background-color: #2d2d2d;
+}
+
+.edgt-accordion-holder .edgt-title-holder {
+    background-color: #1d1d1d;
+    color: #ffffff;
+}
+
+.edgt-accordion-holder .edgt-title-holder.ui-state-active {
+    background-color: #2d2d2d;
+}
+
+blockquote {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
