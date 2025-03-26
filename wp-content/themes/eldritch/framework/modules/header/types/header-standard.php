@@ -9,6 +9,7 @@ use Eldritch\Modules\Header\Lib\HeaderType;
  * Class HeaderStandard
  */
 class HeaderStandard extends HeaderType {
+	public $menuAreaHeight;
 	protected $heightOfTransparency;
 	protected $heightOfCompleteTransparency;
 	protected $headerHeight;

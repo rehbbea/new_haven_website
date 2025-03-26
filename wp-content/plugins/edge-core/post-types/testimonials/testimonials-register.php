@@ -14,6 +14,11 @@ class TestimonialsRegister implements Lib\PostTypeInterface {
 	 */
 	private $base;
 
+	/**
+	 * @var string
+	 */
+	private $taxBase;
+
 	public function __construct() {
 		$this->base = 'testimonials';
 		$this->taxBase = 'testimonials_category';

@@ -13,7 +13,12 @@ class PortfolioRegister implements PostTypeInterface {
 	 */
 	private $base;
 
-	public function __construct() {
+	/**
+	 * @var string
+	 */
+	private $taxBase;
+
+	function __construct() {
 		$this->base    = 'portfolio-item';
 		$this->taxBase = 'portfolio-category';
 

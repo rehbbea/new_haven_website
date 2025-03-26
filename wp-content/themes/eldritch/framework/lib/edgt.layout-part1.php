@@ -398,6 +398,7 @@ class EldritchEdgeTitle implements iEldritchEdgeRender {
     private $title;
     public $hidden_property;
     public $hidden_values = array();
+    public $hidden_value;
 
     function __construct($name = "", $title_label = "", $hidden_property = "", $hidden_value = "") {
         $this->title           = $title_label;

@@ -7,7 +7,8 @@ class EldritchEdgeSimpleLineIcons implements iEldritchEdgeIconCollection {
 	public $param;
 	public $styleUrl;
 
-	public function __construct($title_label = "", $param = "") {
+	public $socialIcons;
+	function __construct($title_label = "", $param = "") {
 		$this->icons       = array();
 		$this->title       = $title_label;
 		$this->param       = $param;

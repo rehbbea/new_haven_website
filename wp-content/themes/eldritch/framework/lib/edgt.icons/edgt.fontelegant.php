@@ -7,6 +7,7 @@ class EldritchEdgeIconsFontElegant implements iEldritchEdgeIconCollection {
 	public $param;
 	public $styleUrl;
 
+		public $socialIcons;
 	function __construct($title_label = "", $param = "") {
 		$this->icons = array();
 		$this->socialIcons = array();

@@ -7,6 +7,7 @@ namespace Eldritch\Modules\Header\Lib;
  * Connects header module with other modules
  */
 class HeaderConnector {
+	public $object;
 	/**
 	 * @param HeaderType $object
 	 */

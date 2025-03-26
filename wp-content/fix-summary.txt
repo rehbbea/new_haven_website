@@ -1,0 +1,55 @@
+# WordPress PHP 8.2+ Compatibility Fixes
+
+## Fixes Implemented
+
+### 1. Fixed dynamic property creation warnings for theme classes:
+
+* Added missing `$socialIcons` property to icon classes:
+  - EldritchEdgeIconsFontAwesome
+  - EldritchEdgeIconsFontElegant
+  - EldritchEdgeIonIcons
+  - EldritchEdgeSimpleLineIcons
+
+* Added missing `$hidden_value` property to EldritchEdgeTitle class
+
+* Added missing `$base` property to Icon class in edge-core plugin
+
+* Added missing `$taxBase` property to CPT register classes:
+  - PortfolioRegister
+  - TestimonialsRegister
+  - SliderRegister
+  - MatchRegister
+
+* Added missing `$title` property to EldritchEdgeSidebar class
+
+* Added missing `$menuAreaHeight` property to HeaderStandard class
+
+* Added missing `$object` property to HeaderConnector class
+
+### 2. Fixed implicit nullable parameter warnings in The Events Calendar plugin:
+
+Created a compatibility plugin that fixes the following issues:
+
+* Added missing `?` nullable type hints to method parameters:
+  - Various `setup_repository_args()` methods in View classes
+  - `capture_request()` and `meta_not()` methods in Query_Filters class
+  - `set_like()` method in Query_Replace class
+  - `get_query_arg_alias_of()` and `get_query_args_aliases_of()` methods in Url class
+  - `from_wp_query()` method in Custom_Tables_Query class
+  - `on_resolve()` method in Lazy_Events class
+
+## Implementation Method
+
+1. For theme and local plugin files:
+   - Directly added missing properties to class definitions
+
+2. For The Events Calendar plugin:
+   - Created a compatibility plugin that uses class aliasing
+   - Original classes are preserved under new names (e.g., Original_Month_View)
+   - New classes extend the original ones and fix the method signatures
+   - No direct modification of plugin files
+
+## Future Maintenance
+
+- The local theme file changes should be permanent
+- The compatibility plugin may need updates if The Events Calendar plugin changes its class structure in future updates

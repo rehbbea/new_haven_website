@@ -3,15 +3,21 @@
  * Created: March 23, 2025
  */
 
-/* Import Google Font - Lato */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Kings&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lavishly+Yours&display=swap');
+
+.first-letter {
+            font-family: 'Lavishly Yours', cursive;
+            font-size: 200%;
+            float: left;
+        }
 
 /* Basic Elements */
 body {
-    background-color: #1d1d1d;
+    background-color: #000000;
     color: #ffffff;
-    font-family: 'Lato','Open Sans', sans-serif !important;
-    font-size: 150% !important;
+    font-family: 'Marcellus','Open Sans', sans-serif !important;
+    font-size: 120% !important;
     font-weight: 350;
 
 }
@@ -38,7 +44,7 @@ a:hover {
 
 /* Main Structure Elements */
 .edgt-wrapper {
-    background-color: #1d1d1d;
+    background-color: #000000;
 }
 
 /* Remove forum background images */
@@ -197,6 +203,37 @@ div.bbp-topic-tags {
     background-color: #1d1d1d;
 }
 
+/* User Menu Dropdown Styling */
+/* Fix dropdown arrow indicators */
+.edgt-drop-down .second:after,
+.edgt-drop-down .edgt-menu-second-bg-container,
+.edgt-drop-down .second .inner ul li.sub > a:after {
+    display: none !important;
+}
+
+.edgt-main-menu > ul > li.menu-item-has-children .second,
+.edgt-main-menu > ul > li.menu-item-has-children .second .inner ul {
+    background-color: #1d1d1d !important;
+    border: 1px solid #3d3d3d !important;
+}
+
+.edgt-drop-down .second .inner ul li a,
+.edgt-drop-down .second .inner ul li a .item_text {
+    color: #ffffff !important;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.7) !important;
+    transition: all 0.3s ease !important;
+}
+
+.edgt-drop-down .second .inner ul li:hover a,
+.edgt-drop-down .second .inner ul li:hover a .item_text {
+    color: #00ffff !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.9) !important;
+}
+
+.edgt-drop-down .second .inner ul li:hover {
+    background-color: #2d2d2d !important;
+}
+
 .edgt-container {
     background-color: #1d1d1d;
 }
@@ -262,6 +299,7 @@ div.bbp-topic-tags {
 /* Title Area */
 .edgt-title {
     background-color: #1d1d1d;
+    background-size: 100% auto;
 }
 
 .edgt-title .edgt-title-holder h1 {

@@ -13,7 +13,12 @@ class MatchRegister implements PostTypeInterface {
 	 */
 	private $base;
 
-	public function __construct() {
+	/**
+	 * @var string
+	 */
+	private $taxBase;
+
+	function __construct() {
 		$this->base    = 'match-item';
 		$this->taxBase = 'match-category';
 

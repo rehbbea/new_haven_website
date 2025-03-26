@@ -9,6 +9,10 @@ use Eldritch\Modules\Shortcodes\Lib\ShortcodeInterface;
  */
 class Icon implements ShortcodeInterface {
 
+	/**
+	 * @var string
+	 */
+	private $base;
 
 	/**
 	 * Icon constructor.

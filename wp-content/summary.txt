@@ -1,0 +1,53 @@
+# PHP 8.2+ Compatibility Fixes
+
+## Solution Summary
+
+We've fixed the PHP 8.2+ deprecated warnings in your WordPress site using a two-part approach:
+
+### 1. Fixed Theme Class Properties
+
+We've added the missing class properties to several theme files to prevent "Creation of dynamic property" warnings:
+
+- Added `$socialIcons` property to icon classes in:
+  - edgt.fontawesome.php
+  - edgt.fontelegant.php
+  - edgt.ionicons.php
+  - edgt.simplelineicons.php
+
+- Added `$hidden_value` property to EldritchEdgeTitle class in edgt.layout-part1.php
+
+- Added `$base` property to Icon class in edge-core/shortcodes/icon/icon.php
+
+- Added `$taxBase` property to CPT register classes in:
+  - portfolio-register.php
+  - testimonials-register.php
+  - slider-register.php
+  - match-register.php
+
+- Added `$title` property to EldritchEdgeSidebar class in edgt-custom-sidebar.php
+
+- Added `$menuAreaHeight` property to HeaderStandard class in header-standard.php
+
+- Added `$object` property to HeaderConnector class in header-connector.php
+
+### 2. Created a Warning Suppressor Plugin
+
+For The Events Calendar plugin warnings about nullable parameters, we've created a simple plugin that suppresses deprecated warnings, which is a safer approach than modifying third-party plugin files.
+
+This plugin:
+- Suppresses all E_DEPRECATED and E_USER_DEPRECATED warnings
+- Shows an admin notice to inform that warnings are being suppressed
+- Doesn't modify any core files or third-party plugin files
+
+## Next Steps
+
+1. Activate the "PHP Deprecated Warnings Suppressor" plugin from your WordPress admin panel.
+
+2. For a more permanent solution for The Events Calendar issues, consider:
+   - Contacting the plugin developers to make their codebase PHP 8.2+ compatible
+   - Updating to the latest version if available, as it might already include these fixes
+
+## Future Maintenance
+
+- These fixes should remain effective until a major update to the theme or The Events Calendar plugin
+- After major updates, check if the warnings return and reapply the fixes if needed

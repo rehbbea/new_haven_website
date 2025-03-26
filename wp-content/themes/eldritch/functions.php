@@ -103,6 +103,59 @@ if (!function_exists('eldritch_edge_dark_theme_styles')) {
 	add_action('wp_enqueue_scripts', 'eldritch_edge_dark_theme_styles', 20);
 }
 
+/**
+ * Filter the menu items before they're output to modify the login link
+ */
+function eldritch_dynamic_menu_items($sorted_menu_items) {
+    if (!is_array($sorted_menu_items)) {
+        return $sorted_menu_items;
+    }
+
+    // Loop through all menu items
+    foreach ($sorted_menu_items as $key => $menu_item) {
+        // Check if this is the login link
+        if (strpos($menu_item->url, 'wp-login.php') !== false) {
+            // If user is logged in, modify the item
+            if (is_user_logged_in()) {
+                $current_user = wp_get_current_user();
+                
+                // Update the existing menu item to show username
+                $sorted_menu_items[$key]->title = $current_user->display_name;
+                $sorted_menu_items[$key]->url = '#';
+                
+                // Add appropriate classes for Eldritch theme
+                if (!in_array('menu-item-has-children', $sorted_menu_items[$key]->classes)) {
+                    $sorted_menu_items[$key]->classes[] = 'menu-item-has-children';
+                }
+                
+                // Create the Profile submenu item
+                $profile_item = clone $menu_item;
+                $profile_item->title = 'Edit Profile';
+                $profile_item->url = admin_url('profile.php');
+                $profile_item->menu_item_parent = $menu_item->ID;
+                $profile_item->db_id = $menu_item->ID . '01';
+                $profile_item->object_id = $menu_item->ID . '01';
+                $profile_item->classes = array(''); // Clear classes
+                
+                // Create the Logout submenu item
+                $logout_item = clone $menu_item;
+                $logout_item->title = 'Logout';
+                $logout_item->url = wp_logout_url(home_url());
+                $logout_item->menu_item_parent = $menu_item->ID;
+                $logout_item->db_id = $menu_item->ID . '02';
+                $logout_item->object_id = $menu_item->ID . '02';
+                $logout_item->classes = array(''); // Clear classes
+                
+                // Insert these new items after the current item
+                array_splice($sorted_menu_items, $key + 1, 0, array($profile_item, $logout_item));
+            }
+        }
+    }
+    
+    return $sorted_menu_items;
+}
+add_filter('wp_nav_menu_objects', 'eldritch_dynamic_menu_items', 10);
+
 if (!function_exists('eldritch_edge_google_fonts_styles')) {
 	/**
 	 * Function that includes google fonts defined anywhere in the theme

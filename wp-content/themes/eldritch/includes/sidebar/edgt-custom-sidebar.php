@@ -8,6 +8,7 @@
 if(!class_exists('EldritchEdgeSidebar')) {
 
 	class EldritchEdgeSidebar {
+	public $title;
 
 		var $sidebars = array();
 		var $stored = "";
