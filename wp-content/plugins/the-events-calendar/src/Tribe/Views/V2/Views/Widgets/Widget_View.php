@@ -88,7 +88,12 @@ class Widget_View extends View {
 	 * @return string The widget "view more" url.
 	 */
 	public function get_view_more_link() {
-		return tribe_events_get_url();
+		$url = tribe_events_get_url();
+		// Replace the URL to include index.php if the site is using the index.php permalink structure
+		if (strpos(get_option('permalink_structure'), '/index.php/') !== false && strpos($url, '/index.php/') === false) {
+			$url = str_replace(home_url('/'), home_url('/index.php/'), $url);
+		}
+		return $url;
 	}
 
 	/**

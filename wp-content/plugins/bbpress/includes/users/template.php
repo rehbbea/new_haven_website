@@ -570,10 +570,18 @@ function bbp_user_profile_url( $user_id = 0, $user_nicename = '' ) {
 				$user_nicename = bbp_get_user_nicename( $user_id );
 			}
 
-			// Run through home_url()
-			$url = trailingslashit( bbp_get_root_url() . bbp_get_user_slug() ) . $user_nicename;
-			$url = user_trailingslashit( $url );
-			$url = home_url( $url );
+			// Build the URL path
+			$path = trailingslashit( bbp_get_user_slug() ) . $user_nicename;
+			$path = user_trailingslashit( $path );
+			
+			// Check if permalink structure contains index.php
+			$permalink_structure = get_option('permalink_structure');
+			if (!empty($permalink_structure) && strpos($permalink_structure, '/index.php/') !== false) {
+				// Add index.php to the URL path
+				$url = home_url('/index.php/' . $path);
+			} else {
+				$url = home_url('/' . $path);
+			}
 
 		// Unpretty permalinks
 		} else {
